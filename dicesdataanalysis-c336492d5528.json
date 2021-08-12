@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dicesdataanalysis",
+  "private_key_id": "c336492d5528e2d1965b3be0d813924287de46d3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDbt4oCfnup+KZ3\nxCbi20czkjI6fRB45XhkgwgB+7cdPkIrLiLHGvbVVn8AQCs2Lqo3bb4dy7O8TVEb\nkVMoeBoSlv9fFOqxqb9P9B7wY8/YmXagFZ60xmyjRkWUfERi5+tVUCfOVuWQdqQG\nuXnfMdLJ/p4JnwKXdbvDVMBIpJurCDXo0EXewl4eDwnBInmlvh0NFhHyp+UZ6dgT\nH8xmmv9CjtO+PIDRVzMR5t8Q07ln8mkeEVjbiaOh2VlKUTKxVvLa5H4dp7kRjir8\nEluXbTyY/Jgg6HAq7/zbZa66cP9JJ8Ewl9ZVq777WFuPranhCAzQ2zIZ4h6OdSIh\nGNIlKZ1zAgMBAAECggEAQwqMzNgFKcbaHH84kk3wOtcoBlq01P7HrnugzOIebIjb\nrctFB1W97TiYRd5OkRjKDWGp+fN240UAM5YzNoz2/6cdQsjiF9XAr0fAzP7Xo7Kn\n1I7kPyqwaV1+y6DjSP6U+xIbI0W2hE7/G6IqgqT0OXg8hpkDNG3THfXVOhUn/pZQ\n76YLo9+8uw66+PtG6ZrK9byvM1wx4M0eRbbejHy0FLd9XjyRXRO9N1za3ogScsvk\nPMxdRTZyv45bA0eJhTORUTSxS7V5d8hbsdIdQqYEaw9kzwGfVYBOKp/gHuc4n2q7\ntbMOtgOZp3xgc6El1cnHiyjeTjzhuyX0ugk+JX926QKBgQD2IV6Jre0Lg+CmhFI2\ndBiJNp1dC4OVpDbTwZmOESW19hRp03illSzD81OwD7rk8aFVFWAUx9w+gSuHjU9A\nx6ikvehNTiFucjuOg6yk4D41WlXeOqRpwjV6mfEkLcr3cwlsU6aSdBhs2dSIB+74\nKqFHTQCSzElMZfwRoY15yrQwjwKBgQDkhwZ20XRDeRha64SklGRLE+MKSofoAes0\nHDPcGaGtFZbLZPXQiYN+Ro3ujfHIyduRqcV0JAQkLvbvw3PlvdVLCy1yL1ZLeg78\nQIGvVPa8xmR3EX4Gs7OCqo73ttbc+u6n0F+6SQLRJoUlS8ksSq2gPJSW/kliqnEn\nirH3V/4u3QKBgG0s1BBiE7l939I883KwAIosrZSuHMnts1wujfxUYtPZuahPYz6f\ncuHgNwjrkU0oWRWyi5HsLSeUiEhyR+tGJOoeSsKvm2iwRvaqNZRU24My9M/EV1WK\nDcq6KhqQLW2hm1ZvrH1d/c+auAk266sszakg4NY8w26d9jej32tcnJzFAoGAGXnc\nBJ7xARyc1HXxAY/xZlU/OER6xiiAmfyS43SQC4Wem+oTZT4PRKKE7BUy4Rlvuttc\nQchKFeaObMgzQWdaQdVrKZGRYzSmOwTN8Efegcj0Jjny/LhHyMdOzNq7NUNcG6Ul\nJtVA1SQgL7o1IRTqKjTWs8aBU9iAaNITaOmMUpkCgYB+pM3BKvx+La62BCt4fmEZ\njwpJpfrOYDUCShZlI12OYVE0SEru2+yXsdWCiV/mTFR2rwQiG6ed4gLTLB9p/ttJ\nNcZ3NVGQWf2jJWw7Nx+Q90ulT4VBIOG8JL0cfblEsUZGOo7fK+6WRWx4H6n2mgk4\n+oMLaCNBCL8wa5M71v95RA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "morgan@dicesdataanalysis.iam.gserviceaccount.com",
+  "client_id": "111000104563175702168",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/morgan%40dicesdataanalysis.iam.gserviceaccount.com"
+}
