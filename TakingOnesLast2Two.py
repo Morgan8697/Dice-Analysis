@@ -23,8 +23,12 @@ def sim(iterations):
                 if dice == 3:
                     dicesTaken.append(dice)
                     remainingDices -= 1
-                elif remainingDices <= 2 and dice == 1:
+                if remainingDices <= 2 and dice == 1:
                     dicesTaken.append(dice)
+                    remainingDices -= 1
+                if remainingDices == 1 and dice == 2:
+                    dicesTaken.append(dice)
+                    remainingDices -= 1
             if dicesTakenLastNumber == len(dicesTaken):
                 dicesTaken.append(smallestDiceValue)
         #transforming threes into 0

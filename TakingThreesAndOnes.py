@@ -1,6 +1,5 @@
 import pandas as pd
 import random
-MAX_ITERATIONS = 1000
 DICE_NUMBER = 5
 
 #Taking ones and threes every turn
@@ -8,7 +7,7 @@ def sim(iterations):
     iteration = 0
 
     resultsList = []
-    while iteration < MAX_ITERATIONS:
+    while iteration < iterations:
         dicesTaken = []
         while len(dicesTaken) < DICE_NUMBER:
             obtainedDices = []
@@ -28,10 +27,10 @@ def sim(iterations):
         #transforming threes into 0
         dicesTaken = [x if x != 3 else 0 for x in dicesTaken]
         finalSum = sum(dicesTaken)
-        result = {"De #1" : dicesTaken[0],"De #2" : dicesTaken[1],"De #3" : dicesTaken[2],"De #4" : dicesTaken[3],"De #5" : dicesTaken[4], "Somme": finalSum}
+        result = {"Dice #1" : dicesTaken[0],"Dice #2" : dicesTaken[1],"Dice #3" : dicesTaken[2],"Dice #4" : dicesTaken[3],"Dice #5" : dicesTaken[4], "Sum": finalSum}
         resultsList.append(result)
         iteration += 1
-    oneAndThreeResults = pd.DataFrame(resultsList, columns=["De #1","De #2","De #3","De #4","De #5", "Somme"])
+    oneAndThreeResults = pd.DataFrame(resultsList, columns=["Dice #1","Dice #2","Dice #3","Dice #4","Dice #5", "Sum"])
     return oneAndThreeResults
 
 
