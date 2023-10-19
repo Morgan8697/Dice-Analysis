@@ -1,41 +1,19 @@
-import pandas as pd
-import random
-DICE_NUMBER = 5
+from Strategy import Strategy
 
-#Taking ones last 2 dices
-def sim(iterations):
-    iteration = 0
+STRATEGY_THRESHOLD_ONES = 3
+STRATEGY_THRESHOLD_TWOS = 2
 
-    resultsList = []
-    while iteration < iterations:
-        dicesTaken = []
-        while len(dicesTaken) < DICE_NUMBER:
-            obtainedDices = []
-            remainingDices = DICE_NUMBER - len(dicesTaken)
-            while len(obtainedDices) != remainingDices:
-                diceValue = random.randint(1,6)
-                obtainedDices.append(diceValue)
-            smallestDiceValue = 6
-            dicesTakenLastNumber = len(dicesTaken)
-            for dice in obtainedDices:
-                if dice < smallestDiceValue:
-                    smallestDiceValue = dice
-                if dice == 3:
-                    dicesTaken.append(dice)
-                    remainingDices -= 1
-                if remainingDices <= 2 and dice == 1:
-                    dicesTaken.append(dice)
-                    remainingDices -= 1
-                if remainingDices == 1 and dice == 2:
-                    dicesTaken.append(dice)
-                    remainingDices -= 1
-            if dicesTakenLastNumber == len(dicesTaken):
-                dicesTaken.append(smallestDiceValue)
-        #transforming threes into 0
-        dicesTaken = [x if x != 3 else 0 for x in dicesTaken]
-        finalSum = sum(dicesTaken)
-        result = {"Dice #1" : dicesTaken[0],"Dice #2" : dicesTaken[1],"Dice #3" : dicesTaken[2],"Dice #4" : dicesTaken[3],"Dice #5" : dicesTaken[4], "Sum": finalSum}
-        resultsList.append(result)
-        iteration += 1
-    oneAndThreeResults = pd.DataFrame(resultsList, columns=["Dice #1","Dice #2","Dice #3","Dice #4","Dice #5", "Sum"])
-    return oneAndThreeResults
+class TakingOnesLast2Two(Strategy):
+    def __init__(self):
+        super().__init__()
+
+    def apply_strategy(self, current_dices):
+        self.took_a_dice = False
+        while 0 in current_dices:
+            self.take_dice(0, current_dices)
+        while len(current_dices) < STRATEGY_THRESHOLD_ONES and 1 in current_dices:
+            self.take_dice(1, current_dices)
+        while len(current_dices) < STRATEGY_THRESHOLD_TWOS and 2 in current_dices:
+            self.take_dice(2, current_dices)
+        if not self.took_a_dice:
+            self.take_dice(min(current_dices), current_dices)
