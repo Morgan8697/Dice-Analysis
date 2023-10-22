@@ -4,6 +4,7 @@ STRATEGY_THRESHOLD = 4
 
 class TakingOnesLast3(Strategy):
     def __init__(self):
+        self.name = "Taking ones for last 2 dices"
         super().__init__()
 
     def apply_strategy(self, current_dices):
